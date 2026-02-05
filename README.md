@@ -1,6 +1,7 @@
-# Homework 1 Interactive SVG Icons
+# Seal Music Mixer
 The partner Music Mixer Project for 1055 Showing off the understanding of JS and CSS as well as interactive
-grid systems by creating an interactive browser based music mixer using svgs and our own selected sounds
+grid systems by creating an interactive browser based music mixer using svgs and our own selected sounds showing off 6 different species of seal and what sounds they make
+as well as combining their sounds together!
 ## Installation
 No installation needed, just drag the html files into your preferred browser
 ## Usage
