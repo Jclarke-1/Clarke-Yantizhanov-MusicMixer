@@ -8,7 +8,30 @@
     <link href="css/main.css" rel="stylesheet" type="text/css"> 
 </head>
 <body>
-    
+     <h1>Seal Species Musix Mixer</h1>
+    <p>Drop the Seal Species down to hear their barks</p>
+    <main class="container">
+        <section class="dropzones">
+             <div class="target-zone" id="far-left"></div>
+             <div class="target-zone" id="left"></div>
+            <div class="target-zone" id="middle"></div>
+            <div class="target-zone" id="right"></div>
+            <div class="target-zone" id="far-right"></div>
+        </section>
+
+        <section class="seals-container">
+            <h2 class="seal-header">Drag these seals into the dropzone to hear them speak!</h2>
+            <div id="seal-box" class="sealboxes">
+                <div class="seal" draggable="true"><img src="images/baikal-seal.png" alt="baikal seal"></div>
+                <div class="seal" draggable="true"><img src="images/elephant-seal-transparent.png" alt="elephant seal" ></div>
+                <div class="seal" draggable="true"><img src="images/grey-seal-transparent.png" alt="grey seal" ></div>
+                <div class="seal" draggable="true"><img src="images/harbour-seal-transparent.png" alt="harbour seal" ></div>
+                <div class="seal" draggable="true"><img src="images/ribbon-seal-transparent.png" alt="ribbon seal" ></div>
+                <div class="seal" draggable="true"><img src="images/sea-lion-transparent.png" alt="sea lion" ></div>
+            </div>
+            <button class="reset-btn" id="reset-btn">Reset Puzzle</button>
+        </section>
+    </main>
 
     <script src="js/main.js"></script>
 </body>
