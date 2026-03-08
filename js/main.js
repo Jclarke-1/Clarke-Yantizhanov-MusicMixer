@@ -30,20 +30,17 @@ function dropped(e) {
 }
 
 
- function resetPlacement() {
-    targetZones.forEach(sealZone => {
-        let child = sealZone[0];
-        if (child) {
-            sealBox.appendChild(child);
-        }
-        console.log("Reset");
-    })
- }
-
+function resetPlace() {
+    targetZones.forEach(zone => {
+    if(zone.firstElementChild) {
+        sealBox.appendChild(zone.firstElementChild);
+    }
+    });
+}
 //Eventlisteners
 
 seals.forEach(seal => {
-    seal.addEventListener("drag start", dragStart);
+    seal.addEventListener("dragstart", dragStart);
 });
 
 targetZones.forEach(zone => {
@@ -51,4 +48,4 @@ targetZones.forEach(zone => {
     zone.addEventListener("drop", dropped);
 });
 
-resetBttn.addEventListener("click", resetPlacement);
+resetBttn.addEventListener("click", resetPlace);
