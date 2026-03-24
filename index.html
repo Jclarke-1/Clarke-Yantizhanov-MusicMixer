@@ -30,8 +30,15 @@
              <div class="zones target-zone col-span-2 m-col-span-4" id="bottom-right"></div>
         </section>
 
-        <button class="reset-btn" id="reset-btn">Reset Puzzle</button>
+         <section class="audio-controls">
+      <h2 class="hidden">Audio Controls</h2>
+      <button id="playButton">PLAY</button>
+      <button id="pauseButton">PAUSE</button>
+      <button class="reset-btn" id="reset-btn">Reset</button>
+      <input id="volumeControl" type="range" min="0" max="100" step="1">
 
+    </section>
+        
         <section class="seals-container">
             <h2 class="hidden">Drag these seals into the dropzone to hear them speak!</h2>
             <div id="seal-box" class="sealboxes grid-con">
@@ -42,7 +49,6 @@
                 <div class="seal col-span-2  m-col-start-4 m-col-end-7" draggable="true"><img src="images/ribbon-seal.png" alt="ribbon seal" ></div>
                 <div class="seal col-span-2 m-col-start-7 m-col-end-10" draggable="true"><img src="images/sea-lion.png" alt="sea lion" ></div>
             </div>
-
         </section>
     </main>
 
