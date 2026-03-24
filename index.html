@@ -42,13 +42,41 @@
         <section class="seals-container">
             <h2 class="hidden">Drag these seals into the dropzone to hear them speak!</h2>
             <div id="seal-box" class="sealboxes grid-con">
-                <div class="seal col-span-2 m-col-span-3" draggable="true"><img src="images/baikal-seal.png" alt="baikal seal"></div>
-                <div class="seal col-span-2 m-col-span-3" draggable="true"><img src="images/elephant-seal.png" alt="elephant seal" ></div>
-                <div class="seal col-span-2 m-col-span-3" draggable="true"><img src="images/grey-seal.png" alt="grey seal" ></div>
-                <div class="seal col-span-2 m-col-span-3" draggable="true"><img src="images/harbour-seal.png" alt="harbour seal" ></div>
-                <div class="seal col-span-2  m-col-start-4 m-col-end-7" draggable="true"><img src="images/ribbon-seal.png" alt="ribbon seal" ></div>
-                <div class="seal col-span-2 m-col-start-7 m-col-end-10" draggable="true"><img src="images/sea-lion.png" alt="sea lion" ></div>
+
+                <div class="seal col-span-2 m-col-span-3" draggable="true" data-species="baikal">
+                    <img src="images/baikal-seal.png" alt="baikal seal"  data-species="baikal">
+                </div>
+
+                <div class="seal col-span-2 m-col-span-3" draggable="true" data-species="elephant">
+                    <img src="images/elephant-seal.png" alt="elephant seal" data-species="elephant">
+                </div>
+
+                <div class="seal col-span-2 m-col-span-3" draggable="true" data-species="gray">
+                    <img src="images/grey-seal.png" alt="grey seal" data-species="gray">
+                </div>
+
+                <div class="seal col-span-2 m-col-span-3" draggable="true" data-species="harbor">
+                    <img src="images/harbour-seal.png" alt="harbour seal" data-species="harbor">
+                </div>
+
+                <div class="seal col-span-2  m-col-start-4 m-col-end-7" draggable="true" data-species="ribbon">
+                    <img src="images/ribbon-seal.png" alt="ribbon seal" data-species="ribbon">
+                </div>
+                <div class="seal col-span-2 m-col-start-7 m-col-end-10" draggable="true" data-species="lion">
+                    <img src="images/sea-lion.png" alt="sea lion" data-species="lion">
+                </div>
+                
             </div>
+
+            <div id="audios"></div>
+
+            <audio data-species="baikal" src="audio/baikal-seal.wav"></audio>
+            <audio data-species="elephant" src="audio/elephant-seal.wav"></audio>
+            <audio data-species="gray" src="audio/gray-seal.wav"></audio>
+            <audio data-species="harbor" src="audio/harbor-seal.wav"></audio>
+            <audio data-species="ribbon" src="audio/ribbon_seal.wav"></audio>
+            <audio data-species="lion" src="audio/sea-lion.wav"></audio>
+
         </section>
     </main>
 
