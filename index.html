@@ -6,21 +6,31 @@
     <title>Music Mixer</title>
     <link href="css/grid.css" rel="stylesheet" type="text/css">
     <link href="css/main.css" rel="stylesheet" type="text/css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
 </head>
 <body>
-     <h1>Seal Species Musix Mixer</h1>
-    <p>Drop the Seal Species down to hear their barks</p>
+    <div class="grid-con" id="headings">
+        <div class="headings m-col-start-4 m-col-end-10">
+            <h1>SEAL SOUND MIXER</h1>
+        </div>
+        <div class="headings m-col-start-2 m-col-end-12">
+            <h2>DROP THE SEAL SPECIES TO HEAR THEIR BARKS</h2>
+        </div>
+   </div>
     <main class="container">
         <section class="dropzones">
-             <div class="target-zone" id="far-left"></div>
-             <div class="target-zone" id="left"></div>
-            <div class="target-zone" id="middle"></div>
-            <div class="target-zone" id="right"></div>
-            <div class="target-zone" id="far-right"></div>
+             <div class="zones target-zone" id="top-left"></div>
+             <div class="zones target-zone" id="top-middle"></div>
+             <div class="zones target-zone" id="top-right"></div>
+             <div class="zones target-zone" id="bottom-left"></div>
+             <div class="zones target-zone" id="bottom-middle"></div>
+             <div class="zones target-zone" id="bottom-right"></div>
         </section>
 
         <section class="seals-container">
-            <h2 class="seal-header">Drag these seals into the dropzone to hear them speak!</h2>
+            <h2 class="hidden">Drag these seals into the dropzone to hear them speak!</h2>
             <div id="seal-box" class="sealboxes">
                 <div class="seal" draggable="true"><img src="images/baikal-seal.png" alt="baikal seal"></div>
                 <div class="seal" draggable="true"><img src="images/elephant-seal.png" alt="elephant seal" ></div>

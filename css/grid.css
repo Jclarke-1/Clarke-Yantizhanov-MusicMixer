@@ -26,16 +26,6 @@ body, p, h1, h2, h3, h4, h5 {
    display: none;
 }
 
-.box {
-   background-color: powderblue;
-   color: rgb(27, 27, 27);
-   border-radius: 5px;
-   padding: 20px;
-   text-align: center;
-   margin-top: 10px;
-   margin-bottom:10px;
- }
-
 .center-grid-con {
    margin: 0 auto;
 }
@@ -49,6 +39,7 @@ body, p, h1, h2, h3, h4, h5 {
    max-width: 1200px;
    padding-left: 15px;
    padding-right: 15px;
+   margin: 0 auto;
 }
 
 /* Add full width grid con for nesting, later */
