@@ -30,43 +30,24 @@
              <div class="zones target-zone col-span-2 m-col-span-4" id="bottom-right"></div>
         </section>
 
-        <button class="reset-btn" id="reset-btn">Reset Puzzle</button>
+         <section class="audio-controls">
+      <h2 class="hidden">Audio Controls</h2>
+      <button id="playButton">PLAY</button>
+      <button id="pauseButton">PAUSE</button>
+      <button class="reset-btn" id="reset-btn">Reset</button>
+      <input id="volumeControl" type="range" min="0" max="100" step="1">
 
-
+    </section>
+        
         <section class="seals-container">
             <h2 class="hidden">Drag these seals into the dropzone to hear them speak!</h2>
             <div id="seal-box" class="sealboxes grid-con">
-
-                <div class="seal col-span-2 m-col-span-3" draggable="true">
-                    <img src="images/baikal-seal.png" alt="baikal seal" data-trackseal="baikal-seal">
-                    <audio src="audio/baikal-seal.wav" class="seal-audio"></audio>
-                </div>
-
-                <div class="seal col-span-2 m-col-span-3" draggable="true">
-                    <img src="images/elephant-seal.png" alt="elephant seal" data-trackseal="elephant-seal">
-                    <audio src="audio/elephant-seal.wav" class="seal-audio"></audio>
-                </div>
-
-                <div class="seal col-span-2 m-col-span-3" draggable="true">
-                    <img src="images/grey-seal.png" alt="grey seal" data-trackseal="gray-seal">
-                    <audio src="audio/gray-seal.wav" class="seal-audio"></audio>
-                </div>
-
-                <div class="seal col-span-2 m-col-span-3" draggable="true">
-                    <img src="images/harbour-seal.png" alt="harbour seal" data-trackseal="harbor-seal">
-                    <audio src="audio/harbor-seal.wav" class="seal-audio"></audio>
-                </div>
-
-                <div class="seal col-span-2  m-col-start-4 m-col-end-7" draggable="true">
-                    <img src="images/ribbon-seal.png" alt="ribbon seal" data-trackseal="ribbon_seal">
-                    <audio src="audio/ribbon_seal.wav" class="seal-audio"></audio>
-                </div>
-
-                <div class="seal col-span-2 m-col-start-7 m-col-end-10" draggable="true">
-                    <img src="images/sea-lion.png" alt="sea lion" data-trackseal="sea-lion">
-                     <audio src="audio/sea-lion.wav" class="seal-audio"></audio>
-                </div>
-
+                <div class="seal col-span-2 m-col-span-3" draggable="true"><img src="images/baikal-seal.png" alt="baikal seal"></div>
+                <div class="seal col-span-2 m-col-span-3" draggable="true"><img src="images/elephant-seal.png" alt="elephant seal" ></div>
+                <div class="seal col-span-2 m-col-span-3" draggable="true"><img src="images/grey-seal.png" alt="grey seal" ></div>
+                <div class="seal col-span-2 m-col-span-3" draggable="true"><img src="images/harbour-seal.png" alt="harbour seal" ></div>
+                <div class="seal col-span-2  m-col-start-4 m-col-end-7" draggable="true"><img src="images/ribbon-seal.png" alt="ribbon seal" ></div>
+                <div class="seal col-span-2 m-col-start-7 m-col-end-10" draggable="true"><img src="images/sea-lion.png" alt="sea lion" ></div>
             </div>
         </section>
     </main>

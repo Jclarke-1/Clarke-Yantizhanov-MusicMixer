@@ -8,7 +8,7 @@
 body {
     background-color: #2EC4B6;
     color: #fff;
-     font-family: "Fredoka", sans-serif;
+    ; font-family: "Fredoka", sans-serif
 }
 
 .zones {
@@ -19,25 +19,29 @@ body {
    margin-top: 10px;
    margin-bottom:10px;
    height: 250px;
+   box-shadow: 0 10px 20px rgba(0,0,0,0.2);
    
  }
+
+ .slot-label {
+
+  background-color: #d9d9d9;
+  border-radius: 40px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+ }
+ 
 
  .headings {
     text-align: center;
     margin-top: 30px;
     background-color: #7e7e7e;
     padding: 15px;
-    border: 5px solid #ffff;
+    border: 10px solid #ffff;
     border-radius: 40px;
     margin-bottom: 30px;
- }
-
- .dropzones {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 0;
+    box-shadow: 0 20px 20px rgba(0,0,0,0.2);
  }
 
  .reset-btn {
@@ -51,11 +55,68 @@ body {
     transition: all ease-in-out .1s;
     font-weight: bolder;
     text-transform: uppercase;
+    font-size: 14px;
+     font-family: "Fredoka", sans-serif;
+     box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+
     }
 
    .reset-btn:hover {
-    background-color: #c0392b;
+    background-color: #f0f0f0;
 }
+
+.audio-controls {
+  padding: 24px;
+  border-radius: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.audio-controls button {
+  font-size: 14px;
+  font-weight: bolder;
+  padding: 12px 24px;
+  border: 10px solid #ffff;
+  border-radius: 40px;
+  color: #ffff;
+  cursor: pointer;
+  transition: all .2s linear;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  font-family: "Fredoka", sans-serif;
+  background-color: #FF6F61;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.audio-controls button:hover {
+  background-color: #f0f0f0;
+}
+
+.audio-controls button {
+  min-width: 80px;
+}
+
+#volumeControl {
+  width: 150px;
+  height: 6px;
+  cursor: pointer;
+  accent-color: #FF6F61;
+  border: 10px solid #ffff;
+  border-radius: 40px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.seal {
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.seal:hover {
+  transform: scale(1.2);
+}
+
 
 
 
