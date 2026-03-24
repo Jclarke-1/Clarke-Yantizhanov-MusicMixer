@@ -6,9 +6,12 @@ const targetZones = document.querySelectorAll(".target-zone");
 let currentDragged = null;
 const resetBttn = document.querySelector(".reset-btn");
 const sealBox = document.querySelector(".sealboxes");
+const theAudioEl = document.querySelectorAll(".seal-audio");
 
 
 //Functions
+
+
 function dragStart() {
     console.log("Drag Start");
     currentDragged = this;
