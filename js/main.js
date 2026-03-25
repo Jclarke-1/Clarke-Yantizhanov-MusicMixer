@@ -9,6 +9,7 @@ const sealBox = document.querySelector(".sealboxes");
 const playBttn = document.querySelector("#playButton");
 const pauseBttn = document.querySelector("#pauseButton");
 const audioSrc = document.querySelectorAll("audio");
+const volControl = document.querySelector("#volumeControl");
 
 myaudios = [
 {species: 'baikal', src: 'audio/baikal-seal'.wav}, 
@@ -77,11 +78,17 @@ function resetPlace() {
     if(zone.firstElementChild)
         sealBox.appendChild(zone.firstElementChild);
     });
-
     currentAudios.forEach(wav => { 
         wav.currentTime = 0;
         wav.pause();
+        wav.src = "";
+        
     })
+}
+
+function setVolume() {
+    console.log(this.value);
+    currentAudios.volume = (this.value/100);
 }
 
 //Eventlisteners
@@ -101,3 +108,5 @@ resetBttn.addEventListener("click", resetPlace);
 playBttn.addEventListener("click", playAudio);
 
 pauseBttn.addEventListener("click", pauseAudio);
+
+volControl.addEventListener("change", setVolume);
