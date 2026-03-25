@@ -19,6 +19,8 @@ myaudios = [
 {species: 'lion', src: 'audio/sea-lion'.wav}
 ];
 
+let currentAudios = [];
+
 finalElements = ''
 myaudios.forEach(audio => {
   finalElements += `<audio data-species=${audio.species} src=${audio.src}></audio>`
@@ -46,40 +48,42 @@ function dropped(e) {
         return;
     }
     this.append(currentDragged);
+    let audioId = currentDragged.dataset.species;
+    audioSrc.forEach(wav => {
+        if (wav.id == audioId){
+            wav.play();
+            currentAudios.push(wav);
+        }
+    })
     currentDragged = null;
 }
 
-function loadAudio() {
-    let currentSrc = `audio/${this.dataset.species}.wav`;
-    audioSrc.src = currentSrc;
-    audioSrc.load();
-    playAudio();
-}
-
 function playAudio() {
-    audioSrc.forEach(wav => {
-     wav.currentTime = 0; 
+    currentAudios.forEach(wav => {
     wav.play();
     })
 
 }
 
 function pauseAudio() {
-    audioSrc.forEach(audioStart => {
-        audioStart.pause()
+    currentAudios.forEach(wav => { 
+    wav.pause();
     })
 }
 
 
 function resetPlace() {
     targetZones.forEach(zone => {
-    if(zone.firstElementChild) {
+    if(zone.firstElementChild)
         sealBox.appendChild(zone.firstElementChild);
-    }
-    audioSrc.currentTime = 0;
-    audioSrc.pause();
     });
+
+    currentAudios.forEach(wav => { 
+        wav.currentTime = 0;
+        wav.pause();
+    })
 }
+
 //Eventlisteners
 
 
